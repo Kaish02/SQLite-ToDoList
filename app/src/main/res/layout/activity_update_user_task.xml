@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Update_User_Task">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:background="#80dfff"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/clickArrowBackImageViewUpdate"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="45dp"
+                app:srcCompat="@drawable/left_arrow" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@id/clickArrowBackImageViewUpdate"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Update Your Tasks"
+                android:textAlignment="center"
+                android:textColor="#C4000000"
+                android:textSize="25sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/textView"
+                android:scaleType="fitXY"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loding_animation" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image_user_update_selected"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="25dp"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#55000000"
+        android:src="@drawable/cmera" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="20dp"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="0.5dp"
+            app:hintTextColor="#E7000000"
+            app:boxStrokeWidth="0.5dp"
+            app:startIconTint="@color/black"
+            app:boxBackgroundColor="#BCE0DCDC"
+            android:layout_marginTop="40dp"
+            app:startIconDrawable="@drawable/title"
+            android:hint="Title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextUserTitleUpdated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="0.5dp"
+            app:startIconDrawable="@drawable/description_task1"
+            app:boxStrokeWidth="0.5dp"
+            app:startIconTint="@color/black"
+            android:layout_marginHorizontal="20dp"
+            app:hintTextColor="@color/black"
+            app:boxBackgroundColor="#BCE0DCDC"
+            android:layout_marginTop="10dp"
+            android:hint="Description"
+            android:inputType="textEnableTextConversionSuggestions"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextUserDescriptionUpdated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonClickUpdateUserTask"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/add_bg_color_radius"
+            android:text="Update task"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>
+
+

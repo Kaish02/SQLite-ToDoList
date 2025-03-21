@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ToDo-SQLite</string>
+    <string name="toast_added_successfully">Toast added successfully!</string>
+    <string name="toast_updated_successfully">Toast Updated successfully!</string>
+    <string name="please_fill_your_title">Please Fill Your Title</string>
+    <string name="please_fill_your_description">Please Fill Your Description</string>
+    <string name="please_choose_your_image">Please Choose Your Image</string>
+</resources>
